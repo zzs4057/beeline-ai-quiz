@@ -1,0 +1,50 @@
+name: Bug report
+description: Report a reproducible userscript issue without sensitive data.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include API keys, cookies, account names, personal course data, or unsanitized screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: Userscript version
+      placeholder: "1.2.2"
+    validations:
+      required: true
+  - type: dropdown
+    id: question_type
+    attributes:
+      label: Question type
+      options:
+        - Single choice
+        - Multiple choice
+        - True/false
+        - Fill in the blank
+        - Subjective
+        - Navigation or cache
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use generic question text and sanitized logs.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed API keys, cookies, personal data, and local paths.
+          required: true

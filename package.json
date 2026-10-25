@@ -1,0 +1,30 @@
+{
+  "name": "beeline-ai-quiz",
+  "version": "1.2.2",
+  "description": "DeepSeek-powered Beeline quiz assistant userscript.",
+  "author": "Beeline AI Quiz Contributors",
+  "keywords": [
+    "beeline-ai",
+    "xinwei",
+    "userscript",
+    "tampermonkey",
+    "deepseek",
+    "quiz",
+    "subjective-question",
+    "fill-in-the-blank"
+  ],
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzs4057/beeline-ai-quiz.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check beeline-ai-quiz.user.js",
+    "test": "node tests/run-all.mjs"
+  }
+}
